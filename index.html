@@ -37,6 +37,9 @@ h1,h2,h3,p,a,dt,dd{overflow-wrap:anywhere}
 
 .check-header{flex-wrap:wrap}.check-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.check-actions .button{font-size:.85rem;padding:12px 16px}.check-actions .small-button{white-space:nowrap}
 
+
+.home-subtitle{margin:0 0 32px;text-align:center;font-size:clamp(1.2rem,2.2vw,1.75rem);font-weight:600;line-height:1.45;color:var(--navy)}
+
 </style>
   
   
@@ -288,7 +291,7 @@ window.GUIDE = {
       </div>
       <div class="hero-workspace"><div class="workspace-title"><span class="pill">6 сценариев</span></div><h2>Что готовим к уроку?</h2>${tasks(false)}<p class="workspace-foot">Выберите материал — откроется подходящий шаблон.</p></div>
     </section>
-    <section class="container home-route"><div class="section-heading"><div><h2>От замысла до применения</h2></div></div>${steps([['Задача', 'Выберите один результат.'], ['Условия', 'Добавьте цель и контекст.'], ['Промпт', 'Скопируйте готовый запрос.'], ['Проверка', 'Сверьте ответ по критериям.'], ['Применение', 'Уточните и испытайте материал.']])}</section>
+    <section class="container home-route"><p class="home-subtitle">ИИ готовит проект. Решение принимает педагог.</p><div class="section-heading"><div><h2>От замысла до применения</h2></div></div>${steps([['Задача', 'Выберите один результат.'], ['Условия', 'Добавьте цель и контекст.'], ['Промпт', 'Скопируйте готовый запрос.'], ['Проверка', 'Сверьте ответ по критериям.'], ['Применение', 'Уточните и испытайте материал.']])}</section>
     <section class="container home-bottom"><a class="feature-card lilac" href="#/safety/anonymize"><h2>Учебная задача —<br>без личных данных.</h2><p>Пройдите шаги обезличивания файла.</p><span class="text-link">Проверить безопасность ↗</span></a><a class="feature-card dark" href="#/check/checklist"><h2>Хороший ответ<br>нужно проверить.</h2><p>9 пунктов перед использованием в классе.</p><span class="text-link">Открыть чек-лист ↗</span></a></section>`;
   }
   function layout(section, page, body, title, lead) {
