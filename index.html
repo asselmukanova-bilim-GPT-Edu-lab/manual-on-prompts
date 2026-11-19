@@ -296,8 +296,15 @@ window.GUIDE = {
       </div>
       <div class="hero-workspace"><div class="workspace-title"><span class="pill">6 сценариев</span></div><h2>Что готовим к уроку?</h2>${tasks()}<p class="workspace-foot">Выберите материал — откроется подходящий шаблон.</p></div>
     </section>
-    <section class="container home-route"><p class="home-subtitle">ИИ готовит проект. Решение принимает педагог.</p><div class="section-heading"><div><h2>От замысла до применения</h2></div></div>${steps([['Задача', 'Выберите один результат.'], ['Условия', 'Добавьте цель и контекст.'], ['Промпт', 'Скопируйте готовый запрос.'], ['Проверка', 'Сверьте ответ по критериям.'], ['Применение', 'Уточните и испытайте материал.']])}</section>
-    <section class="container home-bottom"><a class="feature-card lilac" href="#/safety/anonymize"><h2>Учебная задача —<br>без личных данных.</h2><p>Пройдите шаги обезличивания файла.</p><span class="text-link">Проверить безопасность</span></a><a class="feature-card dark" href="#/check/checklist"><h2>Хороший ответ<br>нужно проверить.</h2><p>9 пунктов перед использованием в классе.</p><span class="text-link">Открыть чек-лист</span></a></section>`;
+    <section class="container prompt-constructor-home" style="padding-top:36px;padding-bottom:70px;border-top:1px solid #e5eaf3">
+      <div class="section-heading" style="align-items:start">
+        <div><p class="eyebrow">ИНТЕРАКТИВНЫЙ ИНСТРУМЕНТ</p><h2>Конструктор промпта</h2></div>
+        <p style="max-width:440px;margin:0;color:#63718b;line-height:1.65">Выберите материал, откройте кирпичики и соберите точный запрос для своей педагогической задачи.</p>
+      </div>
+      <div style="height:clamp(760px,90vh,980px);overflow:hidden;border:1px solid #dfe4f0;border-radius:24px;background:#f7f8fb;box-shadow:0 18px 55px #1d3d8b12">
+        <iframe src="prompt-constructor.html" title="Интерактивный конструктор промпта" loading="lazy" allow="clipboard-write" style="display:block;width:100%;height:100%;border:0"></iframe>
+      </div>
+    </section>`;
   }
   function layout(section, page, body, title, lead) {
     return `<div class="page-banner"><div class="container"><div class="breadcrumbs"><a href="#/">Главная</a><span aria-hidden="true">/</span><span>${section.title}</span></div><p class="eyebrow">${section.title}</p><h1>${title}</h1><p class="page-lead">${lead}</p></div></div>
